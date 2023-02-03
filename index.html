@@ -18,6 +18,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
 
+    <!-- Подключаем иконки с сайта fontawesome.com -->
+    <script src="https://kit.fontawesome.com/12dc2e198d.js" crossorigin="anonymous"></script>
+
     <!-- Указываем заголовок страницы -->
     <title>MoGo</title>
 
@@ -146,29 +149,36 @@
             </div>
 
             <!-- Блок с изображениями -->
-            <div class="about">
+            <div class="card">
 
                 <!-- Блоки для каждого конкретного элемента галереи -->
-                <div class="about__item">
-                    <!-- Блок для конкретного изображения -->
-                    <div class="about__img">
-                        <!-- Изображение -->
-                        <img src="assets/images/about/1.jpg" alt="">
+                <div class="card__item">
+                    <!-- Содержание блока для конкретного элемента галереи -->
+                    <div class="card__inner">
+                        <!-- Блок для конкретного изображения -->
+                        <div class="card__img">
+                            <!-- Изображение -->
+                            <img src="assets/images/about/1.jpg" alt="">
+                        </div>
+                        <!-- Текст поверх иллюстрации -->
+                        <div class="card__text">Super team</div>
                     </div>
-                    <!-- Текст поверх иллюстрации -->
-                    <div class="about__text">Super team</div>
                 </div>
-                <div class="about__item">
-                    <div class="about__img">
-                        <img src="assets/images/about/2.jpg" alt="">
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src="assets/images/about/2.jpg" alt="">
+                        </div>
+                        <div class="card__text">Super team</div>
                     </div>
-                    <div class="about__text">Super team</div>
                 </div>
-                <div class="about__item">
-                    <div class="about__img">
-                        <img src="assets/images/about/3.jpg" alt="">
+                <div class="card__item">
+                    <div class="card__inner">
+                        <div class="card__img">
+                            <img src="assets/images/about/3.jpg" alt="">
+                        </div>
+                        <div class="card__text">Super team</div>
                     </div>
-                    <div class="about__text">Super team</div>
                 </div>
 
             </div>
@@ -519,7 +529,246 @@
 
         </div>
 
-    </d>
+    </div>
+
+    <!-- Секция страницы (блок с командой) -->
+    <section class="section">
+
+        <!-- Контейнер для установления максимальной ширины контента -->
+        <div class="container">
+
+            <!-- Хэдер секции -->
+            <div class="section__header">
+
+                <!-- Надзаголовок секции -->
+                <h3 class="section__suptitle">Who we are</h3>
+
+                <!-- Заголовок секции -->
+                <h2 class="section__title">Meet our team</h2>
+
+                <!-- Описание (поясняющий текст) секции -->
+                <div class="section__text">
+
+                    <!-- Абзац с описанием секции -->
+                    <p>Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit, sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. Ut enim ad 
+                    minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                </div>
+
+            </div>
+
+            <!-- Блок с изображениями -->
+            <div class="card">
+
+                <!-- Блок для конкретного элемента галереи -->
+                <div class="card__item">
+
+                    <!-- Содержание блока для конкретного элемента галереи -->
+                    <div class="card__inner">
+
+                        <!-- Блок для конкретного изображения -->
+                        <div class="card__img">
+
+                            <!-- Изображение -->
+                            <img src="assets/images/team/1.jpg" alt="">
+
+                        </div>
+
+                        <!-- Блок с иконками поверх иллюстрации -->
+                        <div class="card__text">
+
+                            <!-- Блок для иконок социальных сетей -->
+                            <div class="social">
+
+                                <!-- Элементы, содержащие иконки социальных сетей (ссылки) -->
+                                <!-- target="_blank" позволяет открывать ссылки в новом окне -->
+                                <a class="social__item" href="#" target="_blank">
+                                    <!-- Иконка социальной сети -->
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fa-brands fa-pinterest-p"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Блок с информацией о человеке на изображении -->
+                    <div class="card__info">
+
+                        <!-- Имя человека на изображении -->
+                        <div class="card__name">Matthew Dix</div>
+
+                        <!-- Профессия человека на изображении -->
+                        <div class="card__prof">Graphic Design</div>
+
+                    </div>
+
+                </div>
+
+                <!-- Блок для конкретного элемента галереи -->
+                <div class="card__item">
+
+                    <!-- Содержание блока для конкретного элемента галереи -->
+                    <div class="card__inner">
+
+                        <!-- Блок для конкретного изображения -->
+                        <div class="card__img">
+
+                            <!-- Изображение -->
+                            <img src="assets/images/team/2.jpg" alt="">
+
+                        </div>
+
+                        <!-- Блок с иконками поверх иллюстрации -->
+                        <div class="card__text">
+
+                            <!-- Блок для иконок социальных сетей -->
+                            <div class="social">
+
+                                <!-- Элементы, содержащие иконки социальных сетей (ссылки) -->
+                                <!-- target="_blank" позволяет открывать ссылки в новом окне -->
+                                <a class="social__item" href="#" target="_blank">
+                                    <!-- Иконка социальной сети -->
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fa-brands fa-pinterest-p"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Блок с информацией о человеке на изображении -->
+                    <div class="card__info">
+
+                        <!-- Имя человека на изображении -->
+                        <div class="card__name">Michael Fertig</div>
+
+                        <!-- Профессия человека на изображении -->
+                        <div class="card__prof">Branding/UX design</div>
+
+                    </div>
+
+                </div>
+
+                <!-- Блок для конкретного элемента галереи -->
+                <div class="card__item">
+
+                    <!-- Содержание блока для конкретного элемента галереи -->
+                    <div class="card__inner">
+
+                        <!-- Блок для конкретного изображения -->
+                        <div class="card__img">
+
+                            <!-- Изображение -->
+                            <img src="assets/images/team/3.jpg" alt="">
+
+                        </div>
+
+                        <!-- Блок с иконками поверх иллюстрации -->
+                        <div class="card__text">
+
+                            <!-- Блок для иконок социальных сетей -->
+                            <div class="social">
+
+                                <!-- Элементы, содержащие иконки социальных сетей (ссылки) -->
+                                <!-- target="_blank" позволяет открывать ссылки в новом окне -->
+                                <a class="social__item" href="#" target="_blank">
+                                    <!-- Иконка социальной сети -->
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fa-brands fa-pinterest-p"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Блок с информацией о человеке на изображении -->
+                    <div class="card__info">
+
+                        <!-- Имя человека на изображении -->
+                        <div class="card__name">Christopher Campbell</div>
+
+                        <!-- Профессия человека на изображении -->
+                        <div class="card__prof">Developer</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Секция страницы (блок с логотипами) -->
+    <div class="section  section--gray">
+
+        <!-- Контейнер для установления максимальной ширины контента -->
+        <div class="container">
+
+            <!-- Блок с логотипами -->
+            <div class="logos">
+
+                <!-- Элементы, содержащие логотипы -->
+                <div class="logos__item">
+                    <!-- Логотип -->
+                    <img src="assets/images/logos/1.png" alt="">
+                </div>
+                <div class="logos__item">
+                    <img src="assets/images/logos/2.png" alt="">
+                </div>
+                <div class="logos__item">
+                    <img src="assets/images/logos/3.png" alt="">
+                </div>
+                <div class="logos__item">
+                    <img src="assets/images/logos/4.png" alt="">
+                </div>
+                <div class="logos__item">
+                    <img src="assets/images/logos/5.png" alt="">
+                </div>
+                <div class="logos__item">
+                    <img src="assets/images/logos/6.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </body>
 
