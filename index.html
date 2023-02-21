@@ -10,6 +10,11 @@
     <!-- Указываем кодировку UTF-8 -->
     <meta charset="UTF-8">
 
+    <!-- Задаём параметры окна просмотра в браузере, чтобы сделать страницу адаптивной -->
+    <!-- width указывает ширину окна просмотра (в данном случае ширина равна девайсу, на котором открыт сайт) -->
+    <!-- initial-scale — коэффициент масштабирования страницы при первом открытии (в данном случае - стандартное масштабирование) -->
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
     <!-- Подключаем CSS-стили -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -79,7 +84,8 @@
                 <h2 class="intro__suptitle">Creative Template</h2>
 
                 <!-- Главный заголовок страницы (начальный блок) -->
-                <h1 class="intro__title">Welcome to MoGo</h1>
+                <!-- <br> используется для переноса текста на новую строку -->
+                <h1 class="intro__title">Welcome <br> to MoGo</h1>
 
                 <!-- Кнопка -->
                 <a class="btn" href="#">Learn More</a>
@@ -103,19 +109,20 @@
                         <!-- (<span> позволяет расположить элементы в строку) -->
                         <!-- (<div> обычно располагает элементы в столбец) -->
                         <span class="slider__num">01</span>
-                        Intro
+                        <!-- Текст слайдера -->
+                        <span class="slider__text">Intro</span>
                     </div>
                     <div class="slider__item">
                         <span class="slider__num">02</span>
-                        Work
+                        <span class="slider__text">Work</span>
                     </div>
                     <div class="slider__item">
                         <span class="slider__num">03</span>
-                        About
+                        <span class="slider__text">About</span>
                     </div>
                     <div class="slider__item">
                         <span class="slider__num">04</span>
-                        Contacts
+                        <span class="slider__text">Contacts</span>
                     </div>
 
                 </div>
@@ -251,11 +258,10 @@
             </div>
 
             <!-- Блок с корточками сервисов -->
-            <!-- (Первая строка) -->
             <div class="services">
 
                 <!-- Карточки с сервисами -->
-                <div class="services__item">
+                <div class="services__item  services__item--border">
                     <!-- Иллюстрация карточки с сервисом -->
                     <img class="services__icon" src="assets/images/services/photography.png" alt="">
                     <!-- Заголовок карточки с сервисом -->
@@ -264,30 +270,18 @@
                     <div class="services__text">Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit, sed do eiusmod tempor.</div>
                 </div>
-                <div class="services__item">
+                <div class="services__item  services__item--border">
                     <img class="services__icon" src="assets/images/services/web-design.png" alt="">
                     <div class="services__title">Web design</div>
                     <div class="services__text">Ipsum dolor sit amet, 
                     consectetur adipiscing elit, sed do eiusmod tempor.</div>
                 </div>
-                <div class="services__item">
+                <div class="services__item  services__item--border">
                     <img class="services__icon" src="assets/images/services/creativity.png" alt="">
                     <div class="services__title">Creativity</div>
                     <div class="services__text">Dolor sit amet, consectetur 
                     adipiscing elit, sed do eiusmod tempor.</div>
                 </div>
-
-            </div>
-
-            <!-- Разделительная черта -->
-            <hr>
-
-            <!-- Блок с корточками сервисов -->
-            <!-- (Вторая строка) -->
-            <div class="services">
-
-                <!-- Карточки с сервисами -->
-                <!-- (Вторая строка) -->
                 <div class="services__item">
                     <!-- Иллюстрация карточки с сервисом -->
                     <img class="services__icon" src="assets/images/services/seo.png" alt="">
@@ -387,7 +381,7 @@
                 <div class="wedo__item">
 
                     <!-- Изображение -->
-                    <img src="assets/images/wedo/man.jpg" alt="">
+                    <img class="wedo__img" src="assets/images/wedo/man.jpg" alt="">
 
                 </div>
 
