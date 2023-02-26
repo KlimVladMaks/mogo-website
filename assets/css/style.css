@@ -1175,6 +1175,15 @@ stat__text {
 /* Иллюстрация к отзыву */
 .reviews__photo {
 
+    /* Блочное отображение элемента */
+    display: block;
+
+    /* Ширина */
+    width: 210px;
+
+    /* Высота */
+    height: 210px;
+
     /* Превращаем границу в круг */
     border-radius: 50%;
 
@@ -1394,6 +1403,29 @@ stat__text {
 
     /* Выравнить флекс-элементы по центру */
     align-items: center;
+
+    /* Внешние отступы */
+    margin: 0 -15px;
+}
+
+/* Элементы, содержащие логотипы */
+.logos__item {
+
+    /* Внутренние отступы */
+    padding: 0 15px;
+}
+
+/* Логотип */
+.logos__img {
+
+    /* Блочное отображение элемента */
+    display: block;
+
+    /* Максимальная ширина */
+    max-width: 100%;
+
+    /* Высота */
+    height: auto;
 }
 
 /*! ----- ГРУППА WORKS ----- */
@@ -2323,6 +2355,29 @@ stat__text {
         /* Размер текста */
         font-size: 100px;
     }
+
+    /*! REVIEWS */
+
+    .reviews__item {
+
+        /* Внутренний левый отступ */
+        padding-left: 225px;
+    }
+
+    .reviews__photo {
+
+        /* Ширина */
+        width: 180px;
+
+        /* Высота */
+        height: 180px;
+    }
+
+    .reviews__text {
+
+        /* Размер текста */
+        font-size: 20px;
+    }
 }
 
 /* Медиа-запрос, срабатывающий при ширине браузера меньше 990px */
@@ -2390,6 +2445,55 @@ stat__text {
 
         /* Нижняя граница */
         border-bottom: 0;
+    }
+
+    /*! REVIEWS */
+
+    .reviews {
+
+        /* Внутренние отступы */
+        padding: 0 60px;
+    }
+
+    .reviews__item {
+
+        /* Внутренний левый отступ */
+        padding-left: 175px;
+    }
+
+    .reviews__photo {
+
+        /* Ширина */
+        width: 150px;
+
+        /* Высота */
+        height: 150px;
+    }
+
+    /*! CLIENTS */
+
+    .clients {
+
+        /* Максимальная ширина */
+        max-width: 600px;
+
+        /* Выравнить элемент по центру */
+        margin: 0 auto;
+    }
+
+    .clients__item {
+
+        /* Ширина */
+        width: 100%;
+
+        /* Внутренний правый отступ */
+        padding-right: 0;
+    }
+
+    .clients__item:last-child {
+
+        /* Внешний нижний отступ */
+        margin-bottom: 0;
     }
 }
 
@@ -2515,6 +2619,52 @@ stat__text {
         /* Скрываем элемент */
         display: none;
     }
+
+    /*! REVIEWS */
+
+    .reviews__item {
+
+        /* Внутренний левый отступ */
+        padding-left: 0;
+    }
+
+    .reviews__photo {
+
+        /* Статичное позиционирование */
+        position: static;
+
+        /* Выравниваем элемент по центру */
+        margin: 0 auto 20px;
+    }
+
+    .reviews__text {
+
+        /* Размер текста */
+        font-size: 18px;
+    }
+
+    .reviews__author {
+
+        /* Размер текста */
+        font-size: 20px;
+    }
+
+    /*! WORKS */
+
+    .works {
+
+        /* Добавляем возможность переносить флекс-элементы на новую строку */
+        flex-wrap: wrap;
+    }
+
+    .works__col {
+
+        /* Сбрасываем настройки флекс-элемента */
+        flex: none;
+
+        /* Ширина */
+        width: 50%;
+    }
 }
 
 /* Медиа-запрос, срабатывающий при ширине браузера меньше 770px */
@@ -2600,6 +2750,86 @@ stat__text {
         /* Позиция элемента */
         bottom: -50px;
         right: -80px;
+    }
+
+    /*! REVIEWS */
+
+    .reviews {
+
+        /* Внутренние отступы */
+        padding: 0;
+    }
+
+    .reviews__btn {
+
+        /* Положение элемента относительно верха родителя */
+        top: 18%;
+    }
+
+    /*! LOGOS */
+
+    .logos {
+
+        /* Добавляем возможность переноса элементов на новую строку */
+        flex-wrap: wrap;
+
+        /* Выравнить флекс-элементы по центру */
+        justify-content: center;
+    }
+
+    .logos__item {
+
+        /* Ширина */
+        width: 50%;
+
+        /* Внешний нижний отступ */
+        margin-bottom: 20px;
+    }
+
+    .logos__img {
+
+        /* Выравнить элемент по центру */
+        margin: 0 auto;
+    }
+
+    /*! WORKS */
+
+    .works__item {
+
+        /* Максимальная ширина */
+        max-width: 480px;
+
+        /* Выравниваем элемент по центру */
+        margin: 0 auto;
+    }
+
+    .works__col {
+
+        /* Ширина */
+        width: 100%;
+    }
+
+    /*! CLIENTS */
+
+    .clients__item {
+
+        /* Внутренний левый отступ */
+        padding-left: 0;
+
+        /* Выравнить внутренние элементы по центру */
+        text-align: center;
+    }
+
+    .clients__photo {
+
+        /* Статичное позиционирование */
+        position: static;
+    }
+
+    .clients__text::before {
+
+        /* Выравниваем элемент по центру */
+        margin: 15px auto;
     }
 }
 
