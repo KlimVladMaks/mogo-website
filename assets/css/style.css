@@ -55,6 +55,16 @@ hr {
     background-color: #e5e5e5;
 }
 
+/*! ----- ГРУППА PAGE ----- */
+
+.page {
+
+    /* Скрываем весь элемент, выходящий за пределы блока */
+    overflow: hidden;
+}
+
+/*! ----- ГРУППА CONTAINER ----- */
+
 /* Контейнер для установления максимальной ширины контента */
 .container {
 
@@ -1670,6 +1680,9 @@ stat__text {
     /* Превращаем элемент во флекс-контейнер */
     display: flex;
 
+    /* Добавляем возможность переносить флекс-элементы на новую строку */
+    flex-wrap: wrap;
+
     /* Равномерно распределить флекс-элементы, прижав крайние к краям */
     justify-content: space-between;
 }
@@ -1919,6 +1932,7 @@ stat__text {
     /* Внутренний верхний отступ */
     padding-top: 65px;
 
+    /* Цвет фона */
     background-color: #f8f8f8;
 }
 
@@ -1928,11 +1942,23 @@ stat__text {
     /* Превращаем элемент во флекс-контейнер */
     display: flex;
 
+    /* Добавляем возможность переносить флекс-элементы на новую строку */
+    flex-wrap: wrap;
+
     /* Равномерно распределить флекс-элементы, прижав крайние к краям */
     justify-content: space-between;
 
+    /* Внешние отступы */
+    margin: 0 -15px;
+
     /* Внутренний нижний отступ */
     padding-bottom: 65px;
+}
+
+.footer__col {
+
+    /* Внутренние отступы */
+    padding: 0 15px;
 }
 
 /* Колонка с общей информацией о сайте */
@@ -2166,7 +2192,7 @@ stat__text {
 .instagram__item {
 
     /* Ширина */
-    width: 32%;
+    width: 33%;
 
     /* Нижняя граница */
     border-bottom: 1px solid #fff;
@@ -2177,6 +2203,12 @@ stat__text {
 
     /* Блочное отображение элемента */
     display: block;
+
+    /* Максимальная ширина */
+    max-width: 100%;
+
+    /* Высота */
+    height: auto;
 }
 
 /*! ----- ГРУППА SUBSCRIBE ----- */
@@ -2495,6 +2527,38 @@ stat__text {
         /* Внешний нижний отступ */
         margin-bottom: 0;
     }
+
+    /*! FOOTER */
+
+    .footer__col--first {
+
+        /* Ширина */
+        width: 100%;
+    }
+
+    .footer__col--second,
+    .footer__col--third {
+
+        /* Ширина */
+        width: 50%;
+    }
+
+    /*! INSTAGRAM */
+
+    .instagram {
+
+        /* Прижимаем флекс-элементы к началу флекс-контейнера */
+        justify-content: flex-start;
+    }
+
+    .instagram__item {
+
+        /* Ширина */
+        width: auto;
+
+        /* Правая граница */
+        border-right: 1px solid white;
+    }
 }
 
 /* Медиа-запрос, срабатывающий при ширине браузера меньше 770px */
@@ -2665,6 +2729,41 @@ stat__text {
         /* Ширина */
         width: 50%;
     }
+
+    /*! BLOG */
+
+    .blog {
+
+        /* Максимальная ширина */
+        max-width: 380px;
+
+        /* Выравниваем элемент по центру */
+        margin: 0 auto;
+    }
+
+    .blog__item {
+
+        /* Ширина */
+        width: 100%;
+
+        /* Внешний нижний отступ */
+        margin-bottom: 30px;
+    }
+
+    .blog__item:last-child {
+
+        /* Внешний нижний отступ */
+        margin-bottom: 0;
+    }
+
+    /*! FOOTER */
+
+    .footer__col--second,
+    .footer__col--third {
+
+        /* Ширина */
+        width: 100%;
+    }
 }
 
 /* Медиа-запрос, срабатывающий при ширине браузера меньше 770px */
@@ -2830,6 +2929,50 @@ stat__text {
 
         /* Выравниваем элемент по центру */
         margin: 15px auto;
+    }
+
+    /*! SUBSCRIBE */
+
+    .subscribe {
+
+        /* Добавляем возможность переноса флекс-элементов на новую строку */
+        flex-wrap: wrap;
+
+        /* Максимальная ширина */
+        max-width: none;
+    }
+
+    .subscribe__input {
+
+        /* Внешний нижний отступ */
+        margin-bottom: 10px;
+
+        /* Правая граница */
+        border-right: 1px solid #e7e7e7;
+    }
+
+    .subscribe__input,
+    .subscribe__btn {
+
+        /* Ширина */
+        width: 100%;
+    }
+
+    /*! BLOGS */
+
+    .blogs__img {
+
+        /* Ширина */
+        width: 80px;
+
+        /* Высота */
+        height: 50px;
+    }
+
+    .blogs__title {
+
+        /* Размер текста */
+        font-size: 10px;
     }
 }
 
