@@ -23,6 +23,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
 
+    <!-- Подключаем CSS-стили для слайдера Slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
     <!-- Подключаем иконки с сайта fontawesome.com -->
     <script src="https://kit.fontawesome.com/12dc2e198d.js" crossorigin="anonymous"></script>
 
@@ -44,17 +47,17 @@
             <div class="header__inner">
 
                 <!-- Логотип хэдера -->
-                <div class="header__logo">MoGo</div>
+                <div class="header__logo" data-scroll="#intro">MoGo</div>
 
                 <!-- Меню навигации хэдера -->
-                <nav class="nav">
+                <nav class="nav" id="nav">
 
                     <!-- Ссылки меню навигации -->
-                    <a class="nav__link active" href="#">About</a>
-                    <a class="nav__link" href="#">Service</a>
-                    <a class="nav__link" href="#">Work</a>
-                    <a class="nav__link" href="#">Blog</a>
-                    <a class="nav__link" href="#">Contact</a>
+                    <a class="nav__link" href="#" data-scroll="#about">About</a>
+                    <a class="nav__link" href="#" data-scroll="#service">Service</a>
+                    <a class="nav__link" href="#" data-scroll="#works">Work</a>
+                    <a class="nav__link" href="#" data-scroll="#blog">Blog</a>
+                    <a class="nav__link" href="#" data-scroll="#footer">Contact</a>
                     <a class="nav__link" href="#">
                         <!-- Иконка покупки -->
                         <i class="fa-solid fa-cart-shopping"></i>
@@ -66,7 +69,7 @@
                 </nav>
 
                 <!-- Раскрывающийся список с навигацией -->
-                <button class="nav-toggle" type="button">
+                <button class="nav-toggle" id="nav_toggle" type="button">
 
                     <!-- Центральная полоска раскрывающегося списка -->
                     <span class="nav-toggle__item">Menu</span>
@@ -147,7 +150,7 @@
         <!-- Секция страницы -->
         <!-- (Второй блок с историей) -->
         <!-- <section> создаёт новый независимый блок -->
-        <section class="section">
+        <section class="section" id="about">
 
             <!-- Контейнер для установления максимальной ширины контента -->
             <div class="container">
@@ -252,7 +255,7 @@
         </div>
 
         <!-- Секция страницы (блок с сервисами) -->
-        <section class="section">
+        <section class="section" id="service">
 
             <!-- Контейнер для установления максимальной ширины контента -->
             <div class="container">
@@ -406,7 +409,7 @@
                             <div class="accordion__item">
 
                                 <!-- Заголовок раскрывающегося списка -->
-                                <div class="accordion__header">
+                                <div class="accordion__header" data-collapse="#wedo_1">
 
                                     <!-- Значок заголовка -->
                                     <img class="accordion__icon" src="assets/images/wedo/1.png" alt="">
@@ -417,38 +420,7 @@
                                 </div>
 
                                 <!-- Блок с текстом раскрывающегося списка -->
-                                <div class="accordion__content">
-
-                                    <!-- Текст раскрывающегося списка -->
-                                    <p>Lorem ipsum dolor sit amet, 
-                                    consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-                                    commodo consequat. Duis aute irure dolor in reprehenderit in 
-                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-                                    qui officia deserunt mollit anim id est laborum.</p>
-
-                            </div>
-
-                            </div>
-
-                            <!-- Элементы раскрывающегося списка -->
-                            <div class="accordion__item active">
-
-                                <!-- Заголовок раскрывающегося списка -->
-                                <div class="accordion__header">
-
-                                    <!-- Значок заголовка -->
-                                    <img class="accordion__icon" src="assets/images/wedo/2.png" alt="">
-
-                                    <!-- Текст заголовка -->
-                                    <div class="accordion__title">Creativity</div>
-
-                                </div>
-
-                                <!-- Блок с текстом раскрывающегося списка -->
-                                <div class="accordion__content">
+                                <div class="accordion__content" id="wedo_1">
 
                                     <!-- Текст раскрывающегося списка -->
                                     <p>Lorem ipsum dolor sit amet, 
@@ -468,7 +440,38 @@
                             <div class="accordion__item">
 
                                 <!-- Заголовок раскрывающегося списка -->
-                                <div class="accordion__header">
+                                <div class="accordion__header" data-collapse="#wedo_2">
+
+                                    <!-- Значок заголовка -->
+                                    <img class="accordion__icon" src="assets/images/wedo/2.png" alt="">
+
+                                    <!-- Текст заголовка -->
+                                    <div class="accordion__title">Creativity</div>
+
+                                </div>
+
+                                <!-- Блок с текстом раскрывающегося списка -->
+                                <div class="accordion__content" id="wedo_2">
+
+                                    <!-- Текст раскрывающегося списка -->
+                                    <p>Lorem ipsum dolor sit amet, 
+                                    consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                    commodo consequat. Duis aute irure dolor in reprehenderit in 
+                                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+                                    qui officia deserunt mollit anim id est laborum.</p>
+
+                            </div>
+
+                            </div>
+
+                            <!-- Элементы раскрывающегося списка -->
+                            <div class="accordion__item">
+
+                                <!-- Заголовок раскрывающегося списка -->
+                                <div class="accordion__header" data-collapse="#wedo_3">
 
                                     <!-- Значок заголовка -->
                                     <img class="accordion__icon" src="assets/images/wedo/3.png" alt="">
@@ -479,7 +482,7 @@
                                 </div>
 
                                 <!-- Блок с текстом раскрывающегося списка -->
-                                <div class="accordion__content">
+                                <div class="accordion__content" id="wedo_3">
 
                                     <!-- Текст раскрывающегося списка -->
                                     <p>Lorem ipsum dolor sit amet, 
@@ -514,26 +517,52 @@
                 <!-- Блок с отзывами -->
                 <div class="reviews">
 
-                    <!-- Стрелка для перехода к предыдущему отзыву -->
-                    <a class="reviews__btn  reviews__btn--prev" href="#">Prev</a>
+                    <!-- Элемент для создания слайдера -->
+                    <div data-slider>
 
-                    <!-- Стрелка для перехода к следующему отзыву -->
-                    <a class="reviews__btn  reviews__btn--next" href="#">Next</a>
+                        <!-- Дополнительная обёртка для работы со слайдером Slick -->
+                        <div>
 
-                    <!-- Элемент блока с отзывами -->
-                    <div class="reviews__item">
+                            <!-- Элемент блока с отзывами -->
+                            <div class="reviews__item">
 
-                        <!-- Иллюстрация к отзыву -->
-                        <img class="reviews__photo" src="assets/images/avatar.png" alt="">
+                                <!-- Иллюстрация к отзыву -->
+                                <img class="reviews__photo" src="assets/images/avatar.png" alt="">
 
-                        <!-- Текст отзыва -->
-                        <div class="reviews__text">“Lorem ipsum dolor sit amet, 
-                        consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad 
-                        minim veniam, quis nostrud exercitation.”</div>
+                                <!-- Текст отзыва -->
+                                <div class="reviews__text">“Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad 
+                                minim veniam, quis nostrud exercitation.”</div>
 
-                        <!-- Имя автора отзыва -->
-                        <div class="reviews__author">Jon Doe</div>
+                                <!-- Имя автора отзыва -->
+                                <div class="reviews__author">Jon Doe</div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Дополнительная обёртка для работы со слайдером Slick -->
+                        <div>
+
+                            <!-- Элемент блока с отзывами -->
+                            <div class="reviews__item">
+
+                                <!-- Иллюстрация к отзыву -->
+                                <img class="reviews__photo" src="assets/images/avatar.png" alt="">
+
+                                <!-- Текст отзыва -->
+                                <div class="reviews__text">“Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad 
+                                minim veniam, quis nostrud exercitation.”</div>
+
+                                <!-- Имя автора отзыва -->
+                                <div class="reviews__author">Jon Doe</div>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
@@ -783,7 +812,7 @@
         </div>
 
         <!-- Секция страницы (блок с работами) -->
-        <section class="section">
+        <section class="section" id="works">
 
             <!-- Контейнер для установления максимальной ширины контента -->
             <div class="container">
@@ -892,26 +921,52 @@
                 <!-- Блок с отзывами -->
                 <div class="reviews">
 
-                    <!-- Стрелка для перехода к предыдущему отзыву -->
-                    <a class="reviews__btn  reviews__btn--prev" href="#">Prev</a>
+                    <!-- Слайдер Slick -->
+                    <div data-slider>
 
-                    <!-- Стрелка для перехода к следующему отзыву -->
-                    <a class="reviews__btn  reviews__btn--next" href="#">Next</a>
+                        <!-- Дополнительная обёртка для слайдера Slick -->
+                        <div>
 
-                    <!-- Элемент блока с отзывами -->
-                    <div class="reviews__item">
+                            <!-- Элемент блока с отзывами -->
+                            <div class="reviews__item">
 
-                        <!-- Иллюстрация к отзыву -->
-                        <img class="reviews__photo" src="assets/images/avatar.png" alt="">
+                                <!-- Иллюстрация к отзыву -->
+                                <img class="reviews__photo" src="assets/images/avatar.png" alt="">
 
-                        <!-- Текст отзыва -->
-                        <div class="reviews__text">“Lorem ipsum dolor sit amet, 
-                        consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad 
-                        minim veniam, quis nostrud exercitation.”</div>
+                                <!-- Текст отзыва -->
+                                <div class="reviews__text">“Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad 
+                                minim veniam, quis nostrud exercitation.”</div>
 
-                        <!-- Имя автора отзыва -->
-                        <div class="reviews__author">Jon Doe</div>
+                                <!-- Имя автора отзыва -->
+                                <div class="reviews__author">Jon Doe</div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Дополнительная обёртка для слайдера Slick -->
+                        <div>
+
+                            <!-- Элемент блока с отзывами -->
+                            <div class="reviews__item">
+
+                                <!-- Иллюстрация к отзыву -->
+                                <img class="reviews__photo" src="assets/images/avatar.png" alt="">
+
+                                <!-- Текст отзыва -->
+                                <div class="reviews__text">“Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad 
+                                minim veniam, quis nostrud exercitation.”</div>
+
+                                <!-- Имя автора отзыва -->
+                                <div class="reviews__author">Jon Doe</div>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
@@ -999,7 +1054,7 @@
         </section>
 
         <!-- Секция страницы (блок с блогом) -->
-        <section class="section">
+        <section class="section" id="blog">
 
             <!-- Контейнер для установления максимальной ширины контента -->
             <div class="container">
@@ -1186,7 +1241,7 @@
         </section>
 
         <!-- Футер сайта -->
-        <footer class="footer">
+        <footer class="footer" id="footer">
 
             <!-- Контейнер для установления максимальной ширины контента -->
             <div class="container">
@@ -1371,6 +1426,9 @@
 
     <!-- Подключаем JQuery для работы страницы с JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- Подключаем плагин Slick для создания слайдеров -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <!-- Подключаем JavaScript-файл -->
     <script src="assets/js/app.js"></script>
